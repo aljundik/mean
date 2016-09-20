@@ -1,0 +1,26 @@
+{
+  "name": "mean",
+  "version": "1.0.0",
+  "description": "Simple app to demonstrate MEAN stack",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aljundik/mean.git"
+  },
+  "author": "Mohamed Khaled Aljundi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aljundik/mean/issues"
+  },
+  "homepage": "https://github.com/aljundik/mean#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {
+    "mocha": "^3.0.2"
+  }
+}
