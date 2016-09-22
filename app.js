@@ -2,7 +2,7 @@
 	var app = express();// assigh express to the variable
 	var path = require('path');// import path module (to deal with files)
 
-	var routes = require('./routes')
+	var routes = require('./api/routes')
 	app.set('port',3000); // set up the port to be 3000
 
 	app.use(function(req,res,next){ // again we are using anonymos function
