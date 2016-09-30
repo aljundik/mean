@@ -1,3 +1,4 @@
+	require('./api/data/dbconnection.js').open();
 	var express = require('express'); // import express
 	var app = express();// assigh express to the variable
 	var path = require('path');// import path module (to deal with files)

@@ -1,5 +1,14 @@
+var dbconn = require ('../data/dbconnection.js');
 var hotelData = require('../data/hotel-data.json');
+
+
+
 module.exports.hotelsGetAll = function(req,res){
+	
+	var db = dbconn.get();
+
+	console.log("db", db);
+	
 	console.log("we are in the hotels page GET");
 
 
@@ -38,11 +47,7 @@ module.exports.hotellsAddOne = function(req,res){
 	res
 		.status(200)
 		.json(req.body);
-
-
-
-
-};
+	};
 
 
 
