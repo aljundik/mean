@@ -1,4 +1,4 @@
-	require('./api/data/dbconnection.js').open();
+	require('./api/data/db.js');
 	var express = require('express'); // import express
 	var app = express();// assigh express to the variable
 	var path = require('path');// import path module (to deal with files)
@@ -15,7 +15,7 @@
 	});
 
 		//test
-	
+		
 	app.use(express.static(path.join(__dirname, 'public')));//define a static path for the routes
 	app.use(bodyParser.urlencoded({extended : false }));// only string and json,, this is a middleware to deal with requests paramaeters
 	app.use('/api',routes);

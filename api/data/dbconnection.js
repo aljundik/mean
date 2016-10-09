@@ -1,5 +1,5 @@
 var MongoClient = require('mongodb').MongoClient;
-var dburl = 'mongodb://localhost:27017/hotels' //setup the url to find the db usin the protocols,, somthins simillar to https
+var dburl = 'mongodb://localhost:27017/hotels';//setup the url to find the db usin the protocols,, somthins simillar to https
 
 var _connection = null;
 
